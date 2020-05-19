@@ -1,0 +1,40 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    text-align:center;
+    background: lightgrey;
+}
+
+#title{
+    position: relative;
+    margin: 20px auto;
+    width: 60%;
+    background-color: black;
+    color: red;
+    box-shadow: 0px 5px 5px rgba(200,0,0,0.20);
+}
+
+#img-div{
+    background: white;
+    padding: 10px;
+}
+
+#image{
+    max-width:100%;
+    height:auto;
+    display: block;
+    margin: 20px auto;
+}
+
+#tribute-info{
+    border: 1px dashed red;
+    margin: auto;
+    width: 60%;
+
+}
+
+ul{
+    max-width:60%;
+    text-align: left;
+    margin: auto;
+    line-height: 2;
+}
