@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet"> 
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">AOE Form</h1>
+        <p id="description">Please, tell us about your playstyle.</p>
+    </div>
+    <main>
+        <div class="contenedor">
+            <form id="survey-form" action="">
+                <label id="name-label" for="name">Name</label><br>
+                <input placeholder="Your name goes here" id ="name" type="text" required><br>
+
+                <label id="email-label" for="email">Email</label><br>
+                <input placeholder="Your e-mail goes here" id ="email" type="email" required><br>
+
+                <label id="number-label" for="number">Age (not of empires)</label><br>
+                <input placeholder="Your age goes here" id ="number" type="number" min="1" max="100" required><br>
+
+                <label for="civilization">Choose your preferred civilization:</label><br>
+                <select name="civilization" id="dropdown">
+                  <option value="goths">Goths</option>
+                  <option value="huns">Huns</option>
+                  <option value="mayans">Mayans</option>
+                  <option value="aztecs">Aztecs</option>
+                  <option value="britons">Britons</option>
+                  <option value="celts">Celts</option>
+                </select> 
+                
+                <br>
+
+                <label id="radio-label">Choose your preferred army:</label><br>
+                <input type="radio" id="skirimisher" name="army" value="skirimisher" required>
+                <label for="skirimisher">Skirimisher</label><br>
+                <input type="radio" id="pikeman" name="army" value="pikeman">
+                <label for="pikeman">Pikeman</label><br>
+                <input type="radio" id="archer" name="army" value="archer">
+                <label for="archer">Archer</label><br>
+                <input type="radio" id="cavalry" name="army" value="cavalry">
+                <label for="cavalry">Cavalry</label> 
+
+                <br>
+
+                <div class="check">
+                    <label id="check-label">Choose your preferred strategy:</label><br>
+                    <input type="checkbox" name="strategy1" value="fastcastle">
+                    <label for="strategy1">Fast Castle</label><br>
+                    <input type="checkbox" name="strategy2" value="drush">
+                    <label for="strategy2">Drush</label><br>
+                    <input type="checkbox" name="strategy3" value="flush" checked>
+                    <label for="strategy3">Flush</label><br>
+                </div>
+                <label for="start" id="textarea-label">Please indicate us your regular start:</label><br>
+                <textarea name="start" id="start" cols="90" rows="5"></textarea>
+
+                <br>
+
+                <input type="submit" id="submit" value="Submit">
+
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
